@@ -189,14 +189,14 @@ class YaD:
 
 
 # VK
-access_token = '19ef519219ef519219ef5192831afaa87f119ef19ef51927cc25ae5b8fac23497cd4c21'
+access_token = ''
 profile_link = input('Введите id или ссылку на профиль пользователя ВКонтакте: ')
 user_link_id = profile_link.rsplit('/', 1)[-1]
 vk = VK(access_token, user_link_id)
 user_id = vk.user_info()
 
 # Инициализация YaD
-token = 'y0_AgAAAAABN554AADLWwAAAADvr1NQJnw37odUR5aEt7LOgwL_NpljfBU'
+token = ''
 create_folder_url = 'https://cloud-api.yandex.net/v1/disk/resources'
 upload_url = 'https://cloud-api.yandex.net/v1/disk/resources/upload'
 directory_path = f'id{user_id}'
